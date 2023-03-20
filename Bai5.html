@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
+    let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+    let x = prompt('Nhập vào ngôi sao')
+
+    function check(a) {
+        let index = -1
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] == a) {
+                // document.write(arr2[i])
+                index = i
+                break;
+            }
+        }return arr2[index]
+    }
+    if(check(x)){
+        document.write(check(x))
+    }else {
+        document.write('Không tìm thấy sao')
+
+    }
+
+</script>
+</body>
+</html>
